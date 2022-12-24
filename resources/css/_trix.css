@@ -1,0 +1,106 @@
+/** These are specific for the tag that will be added to the rich text content */
+.trix-content .attachment-gallery > .attachment,
+.trix-content .attachment-gallery > rich-text-attachment {
+    flex: 1 0 33%;
+    padding: 0 0.5em;
+    max-width: 33%;
+}
+
+.trix-content .attachment-gallery.attachment-gallery--2 > .attachment,
+.trix-content .attachment-gallery.attachment-gallery--2 > rich-text-attachment,
+.trix-content .attachment-gallery.attachment-gallery--4 > .attachment,
+.trix-content .attachment-gallery.attachment-gallery--4 > rich-text-attachment {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.trix-content rich-text-attachment .attachment {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+/** These are TailwindCSS specific tweaks */
+.trix-content {
+    @apply w-full;
+}
+
+.trix-content h1 {
+    font-size: 1.25rem !important;
+    line-height: 1.25rem !important;
+    @apply leading-5 font-semibold mb-4;
+}
+
+.trix-content a:not(.no-underline) {
+    @apply underline;
+}
+
+.trix-content ul {
+    list-style-type: disc;
+    padding-left: 2.5rem;
+}
+
+.trix-content ol {
+    list-style-type: decimal;
+    padding-left: 2.5rem;
+}
+
+.trix-content img {
+    margin: 0 auto;
+}
+/* .login-page{
+    position: relative;
+  }
+  
+  .login-page::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    bottom: -50%;
+    left: 25%;
+    box-shadow: 0 50px 400px rgb(48, 51, 107);
+    transform: rotate(-180deg);
+  }
+  
+  .login-page::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
+    top: -50%;
+    left: 25%;
+    box-shadow: 0 150px 300px rgba(243, 86, 146, 1);
+    animation: animate_1 10s infinite;
+  }
+  
+  /* gradient-bg-style */
+  .login-page-inner::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    top: 0%;
+    left: -50%;
+    box-shadow: 0 0 500px 450px rgba(254, 201, 63, 1);
+    animation: animate_2 10s infinite;
+  }
+  
+  .login-page-inner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    top: 0%;
+    right: -50%;
+    bottom: -1000px;
+    box-shadow: 0 0 500px 450px rgba(93, 248, 240, 1);
+    animation: animate_3 10s infinite;
+  } */
